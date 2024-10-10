@@ -1,0 +1,542 @@
+:root {
+    --main-margin-top: 75px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: aliceblue;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    padding-top: 30px;
+    background-color: #14131A; 
+}
+
+/* Main */
+#main {
+    display: flex;
+}
+
+#left-side {
+    width: 50%;
+    margin-right: 40px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+#right-side {
+    padding-right: 30px;
+}
+
+/* NavBar */
+#nav-a {
+    font-size: medium;
+    width: 100%;
+    text-align: left;
+}
+
+#cert-drop {
+    font-size: medium;
+    padding: 7px;
+    background-color: #141619;
+}
+
+#cert-drop a {
+    color: aliceblue;
+    margin: 5px;
+}
+
+#cert-drop a:hover {
+    background-color: #282632;
+    color: aliceblue;
+}
+
+#social-drop {
+    font-size: medium;
+    padding: 12px;
+    background-color: #141619;
+}
+
+#social-drop a {
+    padding: 5px;
+    color: aliceblue;
+}
+
+#social-drop a:hover {
+    background-color: #282632;
+    color: aliceblue;
+}
+
+#nav-a a {
+    color: aliceblue;
+    transition: all 200ms ease-in-out;
+}
+
+#nav-a a:hover {
+    color: aliceblue;
+    scale: 1.1;
+}
+
+#ongoing-pro {
+    width: 100%;
+    font-size: medium;
+    margin-top: var(--main-margin-top);
+}
+
+#ongoing-pro ul {
+    border-radius: 0;
+}
+
+#ongoing-pro ul li {
+    background-color: #212529;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(223, 183, 231);
+    color: aliceblue;
+}
+
+#ongoing-pro ul li:hover {
+    border-bottom: 2px solid #624079;
+}
+
+/* Home */
+#profile{
+    margin: 0 auto 15px;
+    width: 100px;
+    cursor: pointer;
+    height: 100px;
+}
+#profile-pic {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+#profile-pic:hover {
+    scale: 1.1;
+}
+
+#cover {
+    filter: blur(10px);
+    width: 100%;
+}
+
+#content h5,
+#content h6 {
+    font-weight: 700;
+    color: #efcea9;
+}
+
+#content p {
+    font-weight: 600;
+}
+
+/* About-Me */
+#about {
+    width: 100%;
+    min-height: 500px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+#more-about {
+    margin-top: 10px;
+    padding: 0 40px;
+    display: flex;
+    gap: 10%;
+}
+
+#me,
+#cert {
+    padding: 20px;
+    width: 50%;
+}
+
+#more-about h4 {
+    font-size: 2.2rem;
+}
+
+#more-about p,
+#cert ul {
+    color: rgb(184, 178, 178);
+    font-size: 2rem;
+}
+
+#me {
+    display: flex;
+    gap: 3rem;
+}
+
+#more-about p span {
+    color: ghostwhite;
+}
+
+#me p {
+    word-spacing: 4px;
+}
+
+#cert {
+    display: flex;
+    gap: 3rem;
+}
+
+#me h4,
+#cert h4 {
+    white-space: nowrap;
+}
+
+#cert ul {
+    margin-top: 50px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#cert li {
+    margin-bottom: 6px;
+}
+
+#cert li a {
+    padding-left: 0;
+    margin-left: 0;
+    transition: .4s;
+    font-size: 1.8rem;
+    color: aliceblue;
+}
+
+#cert a:hover {
+    color: rgb(254, 145, 145);
+}
+
+.top-left-border {
+    width: 100px;
+    border-top: 10px solid aliceblue;
+    border-left: 10px solid aliceblue;
+    height: 100px;
+}
+
+.bottom-right-border {
+    width: 100px;
+    height: 100px;
+    border-bottom: 10px solid aliceblue;
+    border-right: 10px solid aliceblue;
+    position: absolute;
+    right: 30px;
+    top: 600px;
+}
+
+/* projects */
+#projects {
+    margin-top: 69px;
+    font-size: medium;
+    height: 380px;
+}
+
+#project-list {
+    margin-top: 5px;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#project-list .col {
+    width: calc(33.33% - 20px);
+    transition: all 500ms ease-in-out;
+    margin-bottom: 20px;
+}
+
+#project-list .col:hover {
+    transform: scale(1.04);
+}
+
+#project-list .card-body {
+    background-color: #212529;
+}
+
+#project-list .sos {
+    color: aliceblue;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#project-list .card {
+    border: 1px solid rgb(41, 39, 39);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 200px rgb(67, 66, 66);
+    background-color: #212529;
+}
+
+#project-list .lbw {
+    background-color: #212529;
+    font-style: italic;
+    font-size: 1.3rem;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* Skills */
+#skills {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+#skills-list {
+    margin-top: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.caption {
+    margin-top: 6px;
+    margin-bottom: 11px;
+    font-size: 2rem;
+}
+
+#skills-list div {
+    width: calc(33.33% - 20px);
+}
+
+#skills-list .sl,
+#soft-skills .sl {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#skills-list .sl li,
+#soft-skills .sl li {
+    color: rgb(223, 183, 231);
+    background-color: #624079;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    margin-bottom: 11px;
+    transition: 0.2s;
+}
+
+#skills-list .sl li:hover,
+#soft-skills .sl li:hover {
+    color: aliceblue;
+    transform: rotate(1deg) translateY(1px) translateX(1px);
+    font-size: large;
+}
+
+#ss-resume {
+    margin-top: 35px;
+}
+
+/* Contact Section */
+#contact-me {
+    width: 100%;
+    padding: 30px;
+    text-align: left;
+    font-size: 2rem;
+}
+
+#contact-me p {
+    /* font-size: 3rem; */
+    /* font-weight: bold; */
+    margin-bottom: 25px;
+}
+
+#contact-me ul {
+    display: flex;
+    padding-left: 0;
+    gap: 4rem;
+}
+
+#contact-me ul li a i:hover {
+    color: rgb(214, 109, 255);
+}
+
+#me button a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#me button a:hover {
+    color: rgb(214, 109, 255);
+}
+
+.navbar-toggler {
+    color: white;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+}
+
+#about header h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#me button {
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 0;
+    background-color: #212529;
+}
+
+a{
+    text-decoration: none !important;
+    color: aliceblue !important;
+}
+
+a:hover{
+    color: rgb(214, 109, 255) !important;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #left-side {
+        width: 100%;
+        margin-right: 0;
+        padding: 0 20px;
+    }
+    
+    #right-side {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 20px; 
+    }
+
+    #main {
+        flex-direction: column;
+    }
+
+    #about {
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    #projects {
+        margin-top: 20px; 
+        height: fit-content;
+    }
+
+    #project-list .col {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    #me,
+    #cert {
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    
+    #ongoing-pro{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #left-side {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #project-list .col {
+        width: 100%;
+    }
+
+    #about {
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+        padding-left: 0;
+    }
+
+    #about header h3{
+        font-size: medium;
+        margin-bottom: 5px;
+    }
+
+    #more-about p, #more-about div{
+        font-size: small;
+    }
+
+    
+    #ongoing-pro{
+        display: none;
+    }
+
+    
+    #home{
+        height: 200px;
+    }
+
+    #home>div,#home>div>div{
+        height: 100%;
+    }
+
+    #cont-pro, #content{
+        height: 100%;
+    }
+
+    #cover{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #left-side {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #right-side {
+        margin-top: 20px; 
+    }
+
+    #about{
+        font-size: medium;
+    }
+    
+    #about {
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+        padding-left: 0;
+    }
+
+    #about header h3{
+        font-size: medium;
+        margin-bottom: 5px;
+    }
+
+    #more-about p, #more-about div{
+        font-size: small;
+    }
+
+    #ongoing-pro{
+        display: none;
+    }
+}
